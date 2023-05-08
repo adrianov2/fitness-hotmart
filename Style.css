@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+  }
+  
+  .header {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(126, 213, 111, 0.8),
+        rgba(40, 180, 133, 0.8)
+      ),
+      url("img/11.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+  }
+  
+  .nav {
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav__list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__item {
+    margin-right: 3rem;
+  }
+  
+  .nav__link {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.2s;
+  }
+  
+  .active {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .heading-primary {
+    color: #fff;
+    text-align: center;
+    margin-top: 15rem;
+    text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+    letter-spacing: 2px;
+  }
+  
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+  
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    animation: moveInRight 1s ease-out;
+  }
+  
+  .section-products {
+    background-color: #f7f7f7;
+    padding: 10rem 0;
+  }
+  
+  .row {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  }
+  
+
+  
+  .col-1-of-2 {
+    flex: 0 0 calc((100% - 6rem) / 2);
+  
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  
+  .col-1-of-3 {
+    width: calc((100% - 8rem) / 3);
+  
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  
+  .product {
+    background-color: #f9f9f9;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: all 0.2s;
+    display: inline-block;
+    margin: 0 2rem 2rem 0;
+  }
+
+   
